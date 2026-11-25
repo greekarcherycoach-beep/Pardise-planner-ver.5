@@ -1,0 +1,8 @@
+{
+  "appId": "gr.paradisepark.wizard",
+  "appName": "Paradise Park Wizard",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false
+  }
+}

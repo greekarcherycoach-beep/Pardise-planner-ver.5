@@ -1,0 +1,40 @@
+{
+  "name": "paradise-park-wizard",
+  "version": "1.0.0",
+  "description": "Paradise Park Wizard",
+  "main": "main.js",
+  "author": "Paradise Park",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "^31.7.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "gr.paradisepark.wizard",
+    "productName": "Paradise Park Wizard",
+    "files": [
+      "main.js",
+      "index.html"
+    ],
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Paradise-Park-Wizard-portable.exe",
+      "icon": "build/icon.png"
+    }
+  }
+}
